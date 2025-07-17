@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый Мост Bank - Вместе к финансовому успеху</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+
+<body>
+
+  <header id="main-header">
+  <nav class="nav-left">
+    <ul>
+      <li><a href="#dashboard">Главная</a></li>
+      <li><a href="#accounts">Платежи</a></li>
+    </ul>
+  </nav>
+
+  <h1><img src="img/log.png" alt="logo" width="120" title="Новый Мост Bank" /></h1>
+
+  <nav class="nav-right">
+    <ul>
+      <li><a href="#transactions">История</a></li>
+      <li><a href="#settings">Чат</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <!-- Плавающий хэдер, появляется после прокрутки -->
+  <header id="floating-header" class="sticky-header">
+    <nav class="nav-left">
+      <ul>
+        <li><a href="#dashboard">Главная</a></li>
+        <li><a href="#accounts">Платежи</a></li>
+      </ul>
+    </nav>
+
+    <h1><img src="img/log.png" alt="logo" width="100" title="Новый Мост Bank" /></h1>
+
+    <nav class="nav-right">
+      <ul>
+        <li><a href="#transactions">История</a></li>
+        <li><a href="#settings">Чат</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="block welcome">
+    <h2>Добро пожаловать, Иван Иванов!</h2>
+  </section>
+
+  <section class="block accounts">
+    <h2>Ваш текущий баланс:</h2>
+    <p>Ваш основной баланс: <strong>120 500 ₽</strong></p>
+    <p>Второй счет: <strong>25 700 ₽</strong></p>
+    <p>Накопительный счет: <strong>1 545 163 ₽</strong></p>
+  </section>
+
+  <section class="block invest">
+    <p><strong>Инвестировать</strong></p>
+  </section>
+
+  <section class="block credit">
+    <p><strong>Копить</strong></p>
+  </section>
+
+  <section class="block save">
+    <p><strong>Взять кредит</strong></p>
+  </section>
+
+
+  <section class="block about">
+    <p><strong>О НАС</strong></p>
+    <p><strong>Новый Мост Банк</strong> — это не просто финансовая организация, а смелый проект двух молодых и амбициозных друзей, которые решили изменить представление о банковских услугах. Вдохновленные идеей создать пространство, где каждый клиент чувствует себя важным и ценным, это синергия современного дизайна и инновационных технологий. Таким образом, Новый Мост Банк стал не просто финансовым учреждением, а настоящим мостом между мечтами клиентов и реальностью.</p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Новый Мост Bank. Все права защищены.</p>
+  </footer>
+
+
+  <script>
+    const mainHeader = document.getElementById('main-header');
+    const floatingHeader = document.getElementById('floating-header');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const headerBottom = mainHeader.offsetTop + mainHeader.offsetHeight;
+
+      if (scrollY > headerBottom) {
+        floatingHeader.classList.add('show');
+      } else {
+        floatingHeader.classList.remove('show');
+      }
+    });
+  </script>
+
+</body>
+</html>
